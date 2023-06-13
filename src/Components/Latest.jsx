@@ -8,7 +8,7 @@ import iten6 from '../images/portfolio/item-6.jpg'
 
 const Latest = () => {
   return (
-    <div className='w-full h-screen '>
+    <div className='w-full h-full relative  mb-[10rem] '>
         <div className='max-w-[1440px] mx-auto'>
             <div className='flex flex-col justify-center items-center ' >
                   <div className='w-[80%] text-center mt-60 mb-10'>

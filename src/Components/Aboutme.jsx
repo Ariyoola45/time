@@ -2,7 +2,7 @@ import React from 'react'
 import about from '../images/about/about.jpg'
 const Aboutme = () => {
   return (
-    <div className=' w-full h-[90vh] bg-white p-10 mt-20' >
+    <div className=' w-full h-full  bg-wh p-10 mt-20' >
         <div className='max-w-[1340px] mx-auto'>
            <div className='flex flex-col justify-center items-center' >
            <div className=' xl:grid-cols-2 md:grid'>

@@ -1,0 +1,132 @@
+.offer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+.cals{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cals h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.cals p{
+    font-size: 1.2rem;
+}
+.objs{
+    margin-top: 4rem;
+    display: flex;
+
+}
+.objs .icons{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(32,114,198,1) 46%, rgba(96,174,255,1) 99%);
+}
+.objs .icons .ico{
+    position: absolute;
+    font-size: 3rem;
+    color: #000;
+    top: 2rem;
+    left: 2.3rem;
+}
+.word{
+    width: 50%;
+    margin-left: 1.5rem;
+}
+
+.word h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+}
+.word p{
+    font-size: 1.1rem;
+}
+.fle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media only  screen and (max-width:940px) {
+    .fle{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .word{
+        width: 57%;
+        margin-left: 1.3rem;
+    }
+    .icons{
+        width: 100%;
+    }
+    .word h2{
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        
+    }
+    .word p{
+        font-size: 1rem;
+    }
+    .cals{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .objs{
+        width: 100%;
+    }
+
+    .objs .icons .ico{
+    position: absolute;
+    font-size: 3rem;
+    color: #000;
+    top: 2rem;
+    left: 2rem;
+}
+}
+@media only  screen and (max-width:680px) {
+    .fle{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .word{
+        width: 80%;
+        margin-left: 2rem;
+    }
+    .cals{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons{
+        width: 100%;
+    }
+    .objs .icons .ico{
+    position: absolute;
+    font-size: 3rem;
+    color: #000;
+   
+}
+}
