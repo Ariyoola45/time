@@ -5,7 +5,8 @@ import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
 
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+// import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Link } from 'react-router-dom'
 
 import { useState } from 'react'
 
@@ -32,15 +33,18 @@ const Navbar = () => {
             <img src={Logo} alt="" />
             <ul className=' hidden md:flex justify-center items-center '>
                 <li className='p-4' >
-                    <a className= 'text-xl' href="/"> Home </a>
+                    <Link className= 'text-xl' to="/"> Home </Link>
                 </li>
                 <li className='p-4' >
-                    <a  className= 'text-xl'href="/"> Service </a>
+                    <Link  className= 'text-xl'to="/Service"> Service </Link>
+                </li>
+                <li className='p-4' >
+                    <Link  className= 'text-xl'to="/About"> About </Link>
                 </li>
                 <li className='p-4' >
                 <Menu as='div' className="relative inline-block text-left">
          <Menu.Button>
-              <a  className= 'text-xl'href="/">Blog</a>
+              <Link  className= 'text-xl'to="#">Blog</Link>
                  </Menu.Button>
          <Transition
             as={Fragment}
@@ -56,29 +60,29 @@ const Navbar = () => {
         <div className="py-1">
             <Menu.Item>
                     {({ active }) => (
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                                 className={classNames(
                                 active ? 'bg-gray-800 text-gray-100' : 'text-gray-100',
                                 'block px-4 py-2 text-sm'
                                 )}
                                 >
                                 Page 404
-                                </a>
+                                </Link>
                             )}
                                 
                 </Menu.Item>
                 <Menu.Item>
                     {({ active }) => (
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                                 className={classNames(
                                 active ? 'bg-gray-800 text-gray-100' : 'text-gray-100',
                                 'block px-4 py-2 text-sm'
                                 )}
                                 >
                                 Gallery Page
-                                </a>
+                                </Link>
                             )}
                                 
                 </Menu.Item>
@@ -91,7 +95,7 @@ const Navbar = () => {
                 <li className='p-4' >
 <Menu as='div' className="relative inline-block text-left">
          <Menu.Button>
-              <a className= 'text-xl' href="/">Page</a>
+              <Link className= 'text-xl' to="/">Page</Link>
                  </Menu.Button>
          <Transition
             as={Fragment}
@@ -107,29 +111,29 @@ const Navbar = () => {
         <div className="py-1">
             <Menu.Item>
                     {({ active }) => (
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                                 className={classNames(
                                 active ? 'bg-gray-800 text-gray-100' : 'text-gray-100',
                                 'block px-4 py-2 text-sm'
                                 )}
                                 >
                                 Page 404
-                                </a>
+                                </Link>
                             )}
                                 
                 </Menu.Item>
                 <Menu.Item>
                     {({ active }) => (
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                                 className={classNames(
                                 active ? 'bg-gray-800 text-gray-100' : 'text-gray-100',
                                 'block px-4 py-2 text-sm'
                                 )}
                                 >
                                 Gallery Page
-                                </a>
+                                </Link>
                             )}
                                 
                 </Menu.Item>
@@ -140,7 +144,7 @@ const Navbar = () => {
                     </Menu>
                 </li>
                 <li>
-                    <a  className= 'text-xl' href="/"> Contact </a>
+                    <Link  className= 'text-xl' to="/"> Contact </Link>
                 </li>
             </ul>
             <div onClick={handle} className="block md:hidden ">
@@ -148,18 +152,21 @@ const Navbar = () => {
                     {!Click  ? <AiOutlineMenu  className='text-2xl z-10'/> :<AiOutlineClose  className='text-2xl z-10 '/>}
 
             </div>
-            <div className={Click ? 'fixed left-0 top-20 w-full h-[50%] bg-gray-50 ease-in-out duration-700': 'fixed top-[-100%] '}>
+            <div className={Click ? 'fixed left-0 top-20 w-full h-[55%] bg-gray-50 ease-in-out duration-700': 'fixed top-[-100%] '}>
             <ul className='pt-24 uppercase  pl-5'>
                 <li className='p-4' >
-                    <a className= 'text-xl' href="/"> Home </a>
+                    <Link className= 'text-xl' to="/"> Home </Link>
                 </li>
                 <li className='p-4' >
-                    <a  className= 'text-xl'href="/"> Service </a>
+                    <Link  className= 'text-xl'to="/Service"> Service </Link>
+                </li>
+                <li className='p-4' >
+                    <Link  className= 'text-xl'to="/About"> About </Link>
                 </li>
                 <li className='p-4' >
                 <Menu as='div' className="relative inline-block text-left">
          <Menu.Button>
-              <a  className= 'text-xl'href="/">Blog</a>
+              <Link  className= 'text-xl'to="/">Blog</Link>
                  </Menu.Button>
          <Transition
             as={Fragment}
@@ -175,29 +182,29 @@ const Navbar = () => {
         <div className="py-1">
             <Menu.Item>
                     {({ active }) => (
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                                 className={classNames(
                                 active ? 'bg-gray-800 text-gray-100' : 'text-gray-100',
                                 'block px-4 py-2 text-sm'
                                 )}
                                 >
                                 Page 404
-                                </a>
+                                </Link>
                             )}
                                 
                 </Menu.Item>
                 <Menu.Item>
                     {({ active }) => (
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                                 className={classNames(
                                 active ? 'bg-gray-800 text-gray-100' : 'text-gray-100',
                                 'block px-4 py-2 text-sm'
                                 )}
                                 >
                                 Gallery Page
-                                </a>
+                                </Link>
                             )}
                                 
                 </Menu.Item>
@@ -210,7 +217,7 @@ const Navbar = () => {
                 <li className='p-4' >
 <Menu as='div' className="relative inline-block text-left">
          <Menu.Button>
-              <a className= 'text-xl' href="/">Page</a>
+              <Link className= 'text-xl' to="/">Page</Link>
                  </Menu.Button>
          <Transition
             as={Fragment}
@@ -226,29 +233,29 @@ const Navbar = () => {
         <div className="py-1">
             <Menu.Item>
                     {({ active }) => (
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                                 className={classNames(
                                 active ? 'bg-gray-800 text-gray-100' : 'text-gray-100',
                                 'block px-4 py-2 text-sm'
                                 )}
                                 >
                                 Page 404
-                                </a>
+                                </Link>
                             )}
                                 
                 </Menu.Item>
                 <Menu.Item>
                     {({ active }) => (
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                                 className={classNames(
                                 active ? 'bg-gray-800 text-gray-100' : 'text-gray-100',
                                 'block px-4 py-2 text-sm'
                                 )}
                                 >
                                 Gallery Page
-                                </a>
+                                </Link>
                             )}
                                 
                 </Menu.Item>
@@ -259,7 +266,7 @@ const Navbar = () => {
                     </Menu>
                 </li>
                 <li className='p-4'>
-                    <a  className= 'text-xl' href="/"> Contact </a>
+                    <Link  className= 'text-xl' to="/"> Contact </Link>
                 </li>
             </ul>
             </div>
