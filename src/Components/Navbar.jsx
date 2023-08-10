@@ -41,7 +41,7 @@ const Navbar = () => {
                 </li>
             
                 <li className='p-4'>
-                    <Link  className= 'text-xl' to="Contact"> Contact </Link>
+                    <Link  className= 'text-xl' to="/Contact"> Contact </Link>
                 </li>
             </ul>
             <div onClick={handle} className="block md:hidden ">
