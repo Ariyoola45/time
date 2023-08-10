@@ -42,7 +42,10 @@ const ConForm = () => {
       }
 
       alert('massage has been submitted ')
-
+      setName('')
+      setEmail('')
+      setSubject('')
+      setMessage('')
       }
       
   useEffect(() => {
