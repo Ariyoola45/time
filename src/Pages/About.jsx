@@ -5,6 +5,7 @@ import Footer from '../Components/Footer'
 import Things from '../Components/Things'
 import Differ from '../Components/Differ'
 import Latest from '../Components/Latest2'
+import Team from '../Components/Team'
 
 const About = () => {
   return (
@@ -13,9 +14,9 @@ const About = () => {
         <Serve/>
         <Differ/>
         <Latest/>
+        <Team/>
         <Things/>
         <Footer/>
-      
     </div>
   )
 }
