@@ -61,6 +61,10 @@ const Navbar = () => {
                     <Link  className= 'text-xl'to="/About"> About </Link>
                 </li>
                 
+                <li className='p-4'>
+                    <Link  className= 'text-xl' to="Contact"> Contact </Link>
+                </li>
+                
                
 
 
