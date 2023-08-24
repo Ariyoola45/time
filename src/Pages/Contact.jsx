@@ -8,7 +8,7 @@ import Things from '../Components/Things'
 const Contact = () => {
   return (
     <div className=''>
-       <Navbar/>
+       {/* <Navbar/> */}
        <ServeContact1/>
        <ConForm/>
        <Things/>

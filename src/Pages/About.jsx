@@ -10,7 +10,7 @@ import Team from '../Components/Team'
 const About = () => {
   return (
     <div>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Serve/>
         <Differ/>
         <Latest/>

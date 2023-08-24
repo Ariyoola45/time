@@ -8,7 +8,7 @@ import Things from '../Components/Things'
 const Service = () => {
   return (
     <div>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Sarve/>
         <Love/>
         <Things/>
